@@ -1,0 +1,19 @@
+PATH
+  remote: .
+  specs:
+    cronos_chain (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (13.0.6)
+
+PLATFORMS
+  x86_64-darwin-19
+
+DEPENDENCIES
+  cronos_chain!
+  rake (~> 13.0)
+
+BUNDLED WITH
+   2.2.28
