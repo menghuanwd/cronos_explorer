@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cronos_chain (0.1.0)
+    cronos_chain (0.1.2)
 
 GEM
   remote: https://rubygems.org/

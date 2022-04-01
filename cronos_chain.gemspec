@@ -10,14 +10,14 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Write a short summary, because RubyGems requires one."
   spec.description   = "Write a longer description or delete this line."
-  spec.homepage      = 'https://github.com/menghuanwd/cronos_chain'
+  spec.homepage      = 'https://rubygems.org/gems/cronos_chain'
   spec.required_ruby_version = ">= 2.4.0"
 
-  spec.metadata["allowed_push_host"] = 'https://github.com/menghuanwd/cronos_chain'
+  spec.metadata["allowed_push_host"] = 'https://rubygems.org'
 
-  spec.metadata["homepage_uri"] = 'https://github.com/menghuanwd/cronos_chain'
-  spec.metadata["source_code_uri"] = 'https://github.com/menghuanwd/cronos_chain'
-  spec.metadata["changelog_uri"] = 'https://github.com/menghuanwd/cronos_chain'
+  # spec.metadata["homepage_uri"] = 'https://rubygems.org/gems/cronos_chain'
+  # spec.metadata["source_code_uri"] = 'https://github.com/menghuanwd/cronos_chain'
+  # spec.metadata["changelog_uri"] = 'https://github.com/menghuanwd/cronos_chain'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -36,3 +36,4 @@ Gem::Specification.new do |spec|
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
 end
+
