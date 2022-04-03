@@ -1,8 +1,6 @@
 # CronosChain
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cronos_chain`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Cronos Chain Scanner
 
 ## Installation
 
@@ -22,9 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-CronosChain.net = 'testnet3'
-CronosChain.net = 'main' (default)
+```ruby
+CronosChain.net = 'testnet3' or CronosChain.net = 'main' (default)
+```
 
+```ruby
 CronosChain::Blocks.eth_block_number
 
 CronosChain::Accounts.eth_get_balance(@address)
@@ -32,6 +32,7 @@ CronosChain::Accounts.txlist(@address, starttimestamp)
 CronosChain::Accounts.tokenbalance(@contractaddress, @address)
 
 CronosChain::Transactions.gettxinfo(@txhash)
+```
 
 ## Development
 
