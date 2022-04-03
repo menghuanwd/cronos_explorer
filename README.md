@@ -27,11 +27,19 @@ CronosChainScanner.net = 'testnet3' or CronosChainScanner.net = 'main' (default)
 ```ruby
 CronosChainScanner::Blocks.eth_block_number
 
+CronosChainScanner::Contracts.listcontracts
+
 CronosChainScanner::Accounts.eth_get_balance(@address)
 CronosChainScanner::Accounts.txlist(@address, starttimestamp)
 CronosChainScanner::Accounts.tokenbalance(@contractaddress, @address)
 
 CronosChainScanner::Transactions.gettxinfo(@txhash)
+CronosChainScanner::Transactions.gettxreceiptstatus(@txhash)
+CronosChainScanner::Transactions.getstatus(@txhash)
+
+CronosChainScanner::Tokens.getToken(@contractaddress)
+
+CronosChainScanner::Contracts.listcontracts
 ```
 
 ## Development

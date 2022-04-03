@@ -10,6 +10,12 @@ module CronosChainScanner
 
         Request.get hash
       end
+
+      def getblockreward(blockno)
+        hash = DEFAULT_HASH.merge(action: 'getblockreward', blockno: blockno)
+
+        Request.get hash
+      end
     end
   end
 end

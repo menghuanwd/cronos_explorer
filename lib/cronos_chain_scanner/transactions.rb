@@ -17,6 +17,12 @@ module CronosChainScanner
         
         Request.get hash
       end
+
+      def getstatus(txhash)
+        hash = DEFAULT_HASH.merge(action: 'getstatus', txhash: txhash)
+        
+        Request.get hash
+      end
     end
   end
 end

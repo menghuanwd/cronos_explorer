@@ -5,6 +5,8 @@ require_relative "cronos_chain_scanner/request"
 require_relative "cronos_chain_scanner/accounts"
 require_relative "cronos_chain_scanner/transactions"
 require_relative "cronos_chain_scanner/blocks"
+require_relative "cronos_chain_scanner/contracts"
+require_relative "cronos_chain_scanner/tokens"
 
 module CronosChainScanner
   class Error < StandardError; end

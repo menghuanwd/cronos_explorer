@@ -31,7 +31,6 @@ module CronosChainScanner
       end
 
       def params(hash)
-        puts URI.encode_www_form(hash)
         '?' + URI.encode_www_form(hash)
       end
     end
