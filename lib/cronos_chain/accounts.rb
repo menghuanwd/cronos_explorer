@@ -10,6 +10,10 @@ module CronosChain
       def txlist(address)
         Request.new.get "?module=account&action=txlist&address=#{address}"
       end
+
+      def tokenbalance(contractaddress, address)
+        Request.new.get "?module=account&action=tokenbalance&contractaddress={contractaddress}&address={address}"
+      end
     end
   end
 end
