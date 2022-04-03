@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CronosChain
+module CronosChainScanner
   class Accounts
     class << self
       DEFAULT_HASH = { module: 'account' }.freeze

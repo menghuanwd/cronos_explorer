@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CronosChain
+module CronosChainScanner
   class Transactions
 
     class << self

@@ -1,4 +1,4 @@
-# CronosChain
+# CronosChainScanner
 
 Cronos Chain Scanner
 
@@ -7,7 +7,7 @@ Cronos Chain Scanner
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'cronos_chain'
+gem 'cronos_chain_scanner'
 ```
 
 And then execute:
@@ -16,22 +16,22 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install cronos_chain
+    $ gem install cronos_chain_scanner
 
 ## Usage
 
 ```ruby
-CronosChain.net = 'testnet3' or CronosChain.net = 'main' (default)
+CronosChainScanner.net = 'testnet3' or CronosChainScanner.net = 'main' (default)
 ```
 
 ```ruby
-CronosChain::Blocks.eth_block_number
+CronosChainScanner::Blocks.eth_block_number
 
-CronosChain::Accounts.eth_get_balance(@address)
-CronosChain::Accounts.txlist(@address, starttimestamp)
-CronosChain::Accounts.tokenbalance(@contractaddress, @address)
+CronosChainScanner::Accounts.eth_get_balance(@address)
+CronosChainScanner::Accounts.txlist(@address, starttimestamp)
+CronosChainScanner::Accounts.tokenbalance(@contractaddress, @address)
 
-CronosChain::Transactions.gettxinfo(@txhash)
+CronosChainScanner::Transactions.gettxinfo(@txhash)
 ```
 
 ## Development
@@ -42,4 +42,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/menghuanwd/cronos_chain.
+Bug reports and pull requests are welcome on GitHub at https://github.com/menghuanwd/cronos_chain_scanner.
