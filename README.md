@@ -22,7 +22,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+CronosChain.net = 'testnet3'
+CronosChain.net = 'main' (default)
+
+CronosChain::Blocks.eth_block_number
+
+CronosChain::Accounts.eth_get_balance(@address)
+CronosChain::Accounts.txlist(@address, starttimestamp)
+CronosChain::Accounts.tokenbalance(@contractaddress, @address)
+
+CronosChain::Transactions.gettxinfo(@txhash)
 
 ## Development
 
@@ -32,4 +41,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cronos_chain.
+Bug reports and pull requests are welcome on GitHub at https://github.com/menghuanwd/cronos_chain.

@@ -3,36 +3,36 @@ require 'faraday'
 
 module CronosChain
   class Request
-    DOMAIN = 'https://cronos.org/explorer/testnet3/api'
+    class << self
+      def get(hash)
+        res = connect.get do |req|
+          req.url params(hash)
+          req.headers['Content-Type'] = 'application/json'
+        end.body
 
-    def initialize
-      @apikey = '111'
-    end
+        Oj.load(res)
+      end
 
-    def get(url)
-      puts url
-      res = connect.get do |req|
-        req.url url
-        req.headers['Content-Type'] = 'application/json'
-      end.body
+      def post(hash)
+        res = connect.post do |req, params|
+          req.url params(hash)
+          req.headers['Content-Type'] = 'application/json'
+          req.params params
+        end.body
 
-      Oj.load(res)
-    end
+        Oj.load(res)
+      end
 
-    def post(url)
-      res = connect.post do |req, params|
-        req.url url
-        req.headers['Content-Type'] = 'application/json'
-        req.params params
-      end.body
+      def connect
+        Faraday.new(url: CronosChain.domain) do |faraday|
+          faraday.request :json
+          faraday.adapter Faraday.default_adapter
+        end
+      end
 
-      Oj.load(res)
-    end
-
-    def connect
-      Faraday.new(url: DOMAIN) do |faraday|
-        faraday.request :json
-        faraday.adapter Faraday.default_adapter
+      def params(hash)
+        puts URI.encode_www_form(hash)
+        '?' + URI.encode_www_form(hash)
       end
     end
   end
