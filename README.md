@@ -30,6 +30,7 @@ CronosChainScanner::Blocks.eth_block_number
 CronosChainScanner::Contracts.listcontracts
 
 CronosChainScanner::Accounts.eth_get_balance(@address)
+CronosChainScanner::Accounts.balance(@address)
 CronosChainScanner::Accounts.txlist(@address, starttimestamp)
 CronosChainScanner::Accounts.tokenbalance(@contractaddress, @address)
 

@@ -11,6 +11,12 @@ module CronosChainScanner
         Request.get hash
       end
 
+      def balance(address)
+        hash = DEFAULT_HASH.merge(action: 'balance', address: address)
+
+        Request.get hash
+      end
+
       def txlist(address, starttimestamp = nil, sort = 'desc')
         hash = DEFAULT_HASH.merge(action: 'txlist', address: address, starttimestamp: starttimestamp, sort: sort)
 
