@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cronos_chain_scanner (0.1.5)
+    cronos_chain_scanner (0.1.6)
       faraday (~> 2.0)
       oj (~> 3.0)
 
