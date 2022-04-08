@@ -2,6 +2,8 @@
 
 Cronos Chain Scanner
 
+API: https://cronos.org/explorer/testnet3/api-docs
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -21,6 +23,8 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
+# set your net first
+
 CronosChainScanner.net = 'testnet3' or CronosChainScanner.net = 'main' (default)
 ```
 

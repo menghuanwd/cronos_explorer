@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["menghuanwd"]
   spec.email         = ["651019063@qq.com"]
 
-  spec.summary       = "Write a short summary, because RubyGems requires one."
-  spec.description   = "Write a longer description or delete this line."
+  spec.summary       = "A Ruby Gem For Cronos Chain"
+  spec.description   = "An unofficial simple gem For Cronos Chain API"
   spec.homepage      = 'https://github.com/menghuanwd/cronos_chain_scanner'
   spec.required_ruby_version = ">= 2.4.0"
 
