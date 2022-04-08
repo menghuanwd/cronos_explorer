@@ -20,7 +20,7 @@ class ScannersTest < Minitest::Test
     puts res_doc
 
     assert_equal res_doc['id'], 1
-    assert_gt res_doc['result'].hex, "0x2724fd".hex
+    assert_gt res_doc['result'].hex, "0x2724fd".hex  
   end
 
   def test_getblockreward
@@ -47,7 +47,7 @@ class ScannersTest < Minitest::Test
     puts res_doc
 
     assert_equal res_doc['message'], 'OK'
-    assert_equal res_doc['result'], "33494110000000000000"
+    assert_equal res_doc['result'], "31284110000000000000"
   end
 
   def test_txlist
@@ -72,7 +72,7 @@ class ScannersTest < Minitest::Test
   def test_tokenbalance
     res_doc = CronosChainScanner::Accounts.tokenbalance(@contractaddress, @address)
 
-    # puts res_doc
+    puts res_doc
 
     assert_equal res_doc['message'], 'OK'
   end
