@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in cronos_chain_scanner.gemspec
+# Specify your gem's dependencies in cronos_explorer.gemspec
 gemspec
 
 gem "rake", "~> 13.0"

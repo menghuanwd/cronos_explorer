@@ -2,8 +2,8 @@ require_relative './test_helper'
 
 class ScannersTest < Minitest::Test
   def setup
-    CronosChainScanner.net = 'testnet3'
-    # CronosChainScanner.net = 'main'
+    CronosExplorer.net = 'testnet3'
+    # CronosExplorer.net = 'main'
 
     @address = '0x0eE92A5c08480A966B2B503821c49F936686E440'
     @contractaddress = '0x30dd4b969668a111cd273dc8ce8fc99c5bfae794'
@@ -15,7 +15,7 @@ class ScannersTest < Minitest::Test
   end
 
   def test_eth_block_number
-    res_doc = CronosChainScanner::Blocks.eth_block_number
+    res_doc = CronosExplorer::Blocks.eth_block_number
 
     puts res_doc
 
@@ -24,7 +24,7 @@ class ScannersTest < Minitest::Test
   end
 
   def test_getblockreward
-    res_doc = CronosChainScanner::Blocks.getblockreward(@blockno)
+    res_doc = CronosExplorer::Blocks.getblockreward(@blockno)
 
     # puts res_doc
 
@@ -32,7 +32,7 @@ class ScannersTest < Minitest::Test
   end
 
   def test_eth_get_balance
-    res_doc = CronosChainScanner::Accounts.eth_get_balance(@address)
+    res_doc = CronosExplorer::Accounts.eth_get_balance(@address)
 
     puts res_doc
 
@@ -42,16 +42,16 @@ class ScannersTest < Minitest::Test
   end
 
   def test_balance
-    res_doc = CronosChainScanner::Accounts.balance(@address)
+    res_doc = CronosExplorer::Accounts.balance(@address)
 
     puts res_doc
 
     assert_equal res_doc['message'], 'OK'
-    assert_equal res_doc['result'], "31284110000000000000"
+    assert_equal res_doc['result'], "28775150000000000000"
   end
 
   def test_txlist
-    res_doc = CronosChainScanner::Accounts.txlist(@address, @timestamp)
+    res_doc = CronosExplorer::Accounts.txlist(@address, @timestamp)
 
     puts res_doc
 
@@ -61,7 +61,7 @@ class ScannersTest < Minitest::Test
   end
 
   def test_txlist_no_transactions
-    res_doc = CronosChainScanner::Accounts.txlist(@address, @timestamp2)
+    res_doc = CronosExplorer::Accounts.txlist(@address, @timestamp2)
 
     puts res_doc
 
@@ -70,7 +70,7 @@ class ScannersTest < Minitest::Test
   end
 
   def test_tokenbalance
-    res_doc = CronosChainScanner::Accounts.tokenbalance(@contractaddress, @address)
+    res_doc = CronosExplorer::Accounts.tokenbalance(@contractaddress, @address)
 
     puts res_doc
 
@@ -78,7 +78,7 @@ class ScannersTest < Minitest::Test
   end
 
   def test_gettxinfo
-    res_doc = CronosChainScanner::Transactions.gettxinfo(@txhash)
+    res_doc = CronosExplorer::Transactions.gettxinfo(@txhash)
 
     # puts res_doc
 
@@ -86,7 +86,7 @@ class ScannersTest < Minitest::Test
   end
 
   def test_getstatus
-    res_doc = CronosChainScanner::Transactions.getstatus(@txhash)
+    res_doc = CronosExplorer::Transactions.getstatus(@txhash)
 
     # puts res_doc
 
@@ -94,7 +94,7 @@ class ScannersTest < Minitest::Test
   end
 
   def test_gettxreceiptstatus
-    res_doc = CronosChainScanner::Transactions.gettxreceiptstatus(@txhash)
+    res_doc = CronosExplorer::Transactions.gettxreceiptstatus(@txhash)
 
     # puts res_doc
 
@@ -102,7 +102,7 @@ class ScannersTest < Minitest::Test
   end
 
   def test_listcontracts
-    res_doc = CronosChainScanner::Contracts.listcontracts
+    res_doc = CronosExplorer::Contracts.listcontracts
 
     # puts res_doc
 
@@ -110,7 +110,7 @@ class ScannersTest < Minitest::Test
   end
 
   def test_getToken
-    res_doc = CronosChainScanner::Tokens.getToken(@contractaddress)
+    res_doc = CronosExplorer::Tokens.getToken(@contractaddress)
 
     puts res_doc
 

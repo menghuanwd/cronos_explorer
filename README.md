@@ -1,4 +1,4 @@
-# CronosChainScanner
+# CronosExplorer
 
 Cronos Chain Scanner
 
@@ -9,7 +9,7 @@ API: https://cronos.org/explorer/testnet3/api-docs
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'cronos_chain_scanner'
+gem 'cronos_explorer'
 ```
 
 And then execute:
@@ -18,33 +18,33 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install cronos_chain_scanner
+    $ gem install cronos_explorer
 
 ## Usage
 
 ```ruby
 # set your net first
 
-CronosChainScanner.net = 'testnet3' or CronosChainScanner.net = 'main' (default)
+CronosExplorer.net = 'testnet3' or CronosExplorer.net = 'main' (default)
 ```
 
 ```ruby
-CronosChainScanner::Blocks.eth_block_number
+CronosExplorer::Blocks.eth_block_number
 
-CronosChainScanner::Contracts.listcontracts
+CronosExplorer::Contracts.listcontracts
 
-CronosChainScanner::Accounts.eth_get_balance(@address)
-CronosChainScanner::Accounts.balance(@address)
-CronosChainScanner::Accounts.txlist(@address, starttimestamp)
-CronosChainScanner::Accounts.tokenbalance(@contractaddress, @address)
+CronosExplorer::Accounts.eth_get_balance(@address)
+CronosExplorer::Accounts.balance(@address)
+CronosExplorer::Accounts.txlist(@address, starttimestamp)
+CronosExplorer::Accounts.tokenbalance(@contractaddress, @address)
 
-CronosChainScanner::Transactions.gettxinfo(@txhash)
-CronosChainScanner::Transactions.gettxreceiptstatus(@txhash)
-CronosChainScanner::Transactions.getstatus(@txhash)
+CronosExplorer::Transactions.gettxinfo(@txhash)
+CronosExplorer::Transactions.gettxreceiptstatus(@txhash)
+CronosExplorer::Transactions.getstatus(@txhash)
 
-CronosChainScanner::Tokens.getToken(@contractaddress)
+CronosExplorer::Tokens.getToken(@contractaddress)
 
-CronosChainScanner::Contracts.listcontracts
+CronosExplorer::Contracts.listcontracts
 ```
 
 ## Development
@@ -55,4 +55,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/menghuanwd/cronos_chain_scanner.
+Bug reports and pull requests are welcome on GitHub at https://github.com/menghuanwd/cronos_explorer.

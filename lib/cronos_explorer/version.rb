@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CronosChainScanner
+module CronosExplorer
   VERSION = "0.1.8"
 end
 

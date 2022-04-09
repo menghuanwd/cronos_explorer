@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require_relative "cronos_chain_scanner/version"
-require_relative "cronos_chain_scanner/request"
-require_relative "cronos_chain_scanner/accounts"
-require_relative "cronos_chain_scanner/transactions"
-require_relative "cronos_chain_scanner/blocks"
-require_relative "cronos_chain_scanner/contracts"
-require_relative "cronos_chain_scanner/tokens"
+require_relative "cronos_explorer/version"
+require_relative "cronos_explorer/request"
+require_relative "cronos_explorer/accounts"
+require_relative "cronos_explorer/transactions"
+require_relative "cronos_explorer/blocks"
+require_relative "cronos_explorer/contracts"
+require_relative "cronos_explorer/tokens"
 
-module CronosChainScanner
+module CronosExplorer
   class Error < StandardError; end
   # Your code goes here...
   

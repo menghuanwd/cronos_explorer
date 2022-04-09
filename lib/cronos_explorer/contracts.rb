@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CronosChainScanner
+module CronosExplorer
   class Contracts
     class << self
       DEFAULT_HASH = { module: 'contract' }.freeze

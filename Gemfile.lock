@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cronos_chain_scanner (0.1.8)
+    cronos_explorer (0.1.8)
       faraday (~> 2.0)
       oj (~> 3.0)
 
@@ -22,7 +22,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
-  cronos_chain_scanner!
+  cronos_explorer!
   minitest (~> 5.0)
   rake (~> 13.0)
 

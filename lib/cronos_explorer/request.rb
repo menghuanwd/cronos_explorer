@@ -1,7 +1,7 @@
 require 'oj'
 require 'faraday'
 
-module CronosChainScanner
+module CronosExplorer
   class Request
     class << self
       def get(hash)
@@ -24,7 +24,7 @@ module CronosChainScanner
       end
 
       def connect
-        Faraday.new(url: CronosChainScanner.domain) do |faraday|
+        Faraday.new(url: CronosExplorer.domain) do |faraday|
           faraday.request :json
           faraday.adapter Faraday.default_adapter
         end
