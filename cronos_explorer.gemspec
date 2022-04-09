@@ -5,17 +5,17 @@ require_relative "lib/cronos_explorer/version"
 Gem::Specification.new do |spec|
   spec.name          = "cronos_explorer"
   spec.version       = CronosExplorer::VERSION
-  spec.authors       = ["menghuanwd"]
-  spec.email         = ["651019063@qq.com"]
+  spec.authors       = ["dave"]
+  spec.email         = ["dave.gu@crypto.com"]
 
   spec.summary       = "A Ruby Gem For Cronos Chain"
-  spec.description   = "An unofficial simple gem For Cronos Chain API"
-  spec.homepage      = 'https://github.com/menghuanwd/cronos_explorer'
+  spec.description   = "An unofficial simple gem For Cronos Chain Explorer API"
+  spec.homepage      = 'https://github.com/gu-dave/cronos_explorer'
   spec.required_ruby_version = ">= 2.4.0"
 
   spec.metadata["allowed_push_host"] = 'https://rubygems.org'
 
-  spec.metadata["homepage_uri"] = 'https://github.com/menghuanwd/cronos_explorer'
+  spec.metadata["homepage_uri"] = 'https://github.com/gu-dave/cronos_explorer'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

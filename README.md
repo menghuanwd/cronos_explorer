@@ -55,4 +55,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/menghuanwd/cronos_explorer.
+Bug reports and pull requests are welcome on GitHub at https://github.com/gu-dave/cronos_explorer.
